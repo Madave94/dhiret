@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dhiret"
+version = "0.5"
+authors = [
+  { name="David Tschirschwitz", email="david.tschirschwitz@uni-weimar.de" },
+]
+description = "Package that allows the training, evaluation and usage of a retrieval pipeline developed for historical image retrieval."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pytest",
+    "annoy",
+    "open_clip_torch",
+    "matplotlib",
+    "tqdm",
+    "pandas",
+    "learn2learn",
+    "timm",
+    "tensorboard",
+    "jupyterlab",
+    "ipywidgets"
+]

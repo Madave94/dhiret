@@ -1,0 +1,10 @@
+# Test script to run the different MAML trained models
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese efficientnet_b0 --weights_path efficientnet_b0_os128_tep5_shots4_supshots1_epoch1.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese efficientnet_b0 --weights_path efficientnet_b0_os128_tep5_shots4_supshots2_epoch1.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese efficientnet_b0 --weights_path efficientnet_b0_os128_tep5_shots5_supshots3_epoch1.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese regnetx_064 --weights_path regnetx_064_os128_tep5_shots4_supshots1_epoch5.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese regnetx_064 --weights_path regnetx_064_os128_tep5_shots4_supshots2_epoch1.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese regnetx_064 --weights_path regnetx_064_os128_tep5_shots5_supshots3_epoch5.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese seresnext50_32x4d --weights_path seresnext50_32x4d_os128_tep5_shots4_supshots1_epoch5.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese seresnext50_32x4d --weights_path seresnext50_32x4d_os128_tep5_shots4_supshots2_epoch4.pth --print_results results/maml.csv --output_size 128
+python dhiret/common/evaluation.py data/dhreaal/dhreaal.csv data/dhreaal/test siamese seresnext50_32x4d --weights_path seresnext50_32x4d_os128_tep5_shots5_supshots3_epoch1.pth --print_results results/maml.csv --output_size 128
